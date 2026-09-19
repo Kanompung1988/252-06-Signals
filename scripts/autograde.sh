@@ -2,7 +2,7 @@
 set -euo pipefail
 
 ROOT_DIR="$(cd "$(dirname "${BASH_SOURCE[0]}")/.." && pwd)"
-ASSIGNMENT="$(basename $(dirname "$ROOT_DIR"))"
+ASSIGNMENT="$(basename "$(dirname "$ROOT_DIR")")"
 
 score=0
 max_score=100

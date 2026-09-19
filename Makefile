@@ -13,6 +13,7 @@ grade: all
 	./scripts/grade.sh
 
 $(BIN_DIR)/signal_ipc: src/signal_ipc.c include/signal_ipc.h
+	@mkdir -p $(BIN_DIR)
 	$(CC) $(CFLAGS) $< -o $@
 
 $(BIN_DIR)/signal_ipc_solution: solutions/signal_ipc_solution.c include/signal_ipc.h
